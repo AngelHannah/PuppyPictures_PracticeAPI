@@ -36,6 +36,5 @@ function displayDoggo(returnedMessage) {
     let url = returnedMessage.message;
     //Add picture
     puppyPicture.src = url;
-
 }
 
