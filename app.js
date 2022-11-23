@@ -13,6 +13,7 @@ window.addEventListener('load', function () {
     puppyPicture = document.getElementById('puppyPicture');
     //Listener for the button
     btnPicture.addEventListener('click', getPicture);
+    getPicture();
 })
 
 //Define function to be called on click of button
