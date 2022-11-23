@@ -11,15 +11,17 @@ window.addEventListener('load', function () {
     btnPicture = document.getElementById('btnPicture');
     pictureContainer = document.getElementById('picture-container');
     puppyPicture = document.getElementById('puppyPicture');
+
     //Listener for the button
     btnPicture.addEventListener('click', getPicture);
+    
+    //Call to get picture on load of page so link isn't broken
     getPicture();
 })
 
 //Define function to be called on click of button
 function getPicture() {
     //Using the Get method to ask for a doggo pic
-    //Get returns a promise so handle it appropriately
     //Get returns a promise, we call a promise with then
     http.get('https://dog.ceo/api/breeds/image/random')
         //Function that runs on resolve, this is where I will have the picture and be able to display it
