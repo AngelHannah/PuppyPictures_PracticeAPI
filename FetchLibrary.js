@@ -5,6 +5,8 @@ class FetchLibrary {
   //block without this or prototype
   get(url) {
     return new Promise((resolve, reject) => {
+      //Add request options to send header with api key
+      //Adding this should allow me to pass the key to be authenticated without messing other calls up
       //This is the fetching request
       fetch(url)
         //This line parses the response from the server into text or json
@@ -82,5 +84,6 @@ class FetchLibrary {
         .catch(error => reject(error))
     });
   }
-
 }
+
+//Get a cat
